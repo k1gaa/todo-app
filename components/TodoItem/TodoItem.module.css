@@ -1,3 +1,42 @@
+/* List */
+
 .list {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-top: 1px solid currentColor;
   list-style: none;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.done-list {
+  text-decoration: line-through;
+}
+
+/* Container */
+
+.container {
+  display: flex;
+  gap: 15px;
+}
+
+/* Buttons */
+
+.done__btn,
+.remove__btn {
+  border: 1px solid var(--main-color);
+  background-color: #fff;
+  color: var(--main-color);
+  padding: 0.3rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: 0.1s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--main-color);
+    color: #fff;
+  }
 }
