@@ -1,0 +1,34 @@
+/* Container */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+/* Button */
+
+.show__input__btn {
+  background-color: var(--main-color);
+  color: #fff;
+  border-radius: 50px;
+  width: 50px;
+  font-size: 2rem;
+  font-weight: 600;
+  aspect-ratio: 1;
+  border: 0;
+  transition: 0.1s;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}
+
+/* Text */
+
+.subheading__text {
+  font-weight: 500;
+  font-size: 1.3rem;
+}

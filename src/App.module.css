@@ -1,4 +1,4 @@
-/* Containers */
+/* Container */
 
 .container {
   background-color: #fff;
@@ -9,75 +9,4 @@
   flex-direction: column;
   gap: 20px;
   width: 500px;
-}
-
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 100px;
-}
-
-/* Text */
-
-.subheading__text {
-  font-weight: 500;
-  font-size: 1.3rem;
-}
-
-/* Buttons */
-
-.show__input__btn {
-  background-color: var(--main-color);
-  color: #fff;
-  border-radius: 50px;
-  width: 50px;
-  font-size: 2rem;
-  font-weight: 600;
-  aspect-ratio: 1;
-  border: 0;
-  transition: 0.1s;
-
-  &:hover {
-    cursor: pointer;
-    opacity: 0.8;
-  }
-}
-
-.add__btn {
-  border: 1px solid var(--main-color);
-  background-color: #fff;
-  color: var(--main-color);
-  padding: 0.4rem;
-  font-size: 1.1rem;
-  border-radius: 5px;
-  transition: 0.1s;
-
-  &:hover {
-    cursor: pointer;
-    background-color: var(--main-color);
-    color: #fff;
-  }
-}
-
-/* Form */
-
-.form {
-  display: flex;
-  gap: 15px;
-}
-
-/* Input */
-
-.input {
-  width: 100%;
-  border-radius: 5px;
-  border: 1px solid var(--main-color);
-  outline: 0;
-  padding: 0.4rem 0.8rem;
-  font-size: 1.1rem;
-
-  &:focus {
-    outline: 1px solid var(--main-color);
-  }
 }
