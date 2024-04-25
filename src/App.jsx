@@ -23,10 +23,24 @@ function App() {
   return (
     <div className={styles.container}>
       <Header
+        arrayLength={todosArray.length}
         isFormShown={isFormShown}
         onButtonClick={() => setIsFormShown(true)}
       />
-      {isFormShown && <Form />}
+      {isFormShown && (
+        <Form
+          onFormSubmit={(inputValue) => {
+            setTodosArray((todos) => [
+              ...todos,
+              {
+                name: inputValue,
+                done: false,
+                id: Math.random(),
+              },
+            ]);
+          }}
+        />
+      )}
       <ul>
         {todosArray.map(({ name, done, id }) => {
           return (
